@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --maindarkblue: #1c2e6a;
+  --mainorange: #f98125;
+}
+* {
+  font-family: Montserrat, sans-serif;
+}
+body {
+  background-color: #fcfcfc;
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  margin-top: 10px;
+}
+
+nav {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#logo {
+  width: 90px;
+  height: 80px;
+  float: left;
+}
+
+#menu {
+  position: relative;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+}
+
+nav a {
+  display: block;
+  color: var(--maindarkblue);
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 16px;
+}
+
+nav a:hover {
+  background-color: var(--maindarkblue);
+  color: #fcfcfc;
+  border-radius: 16px;
+
+}
+
+.dropcontenido {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropcontenido a {
+  float: none;
+  color: var(--maindarkblue);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-radius: 0;
+}
+
+nav a:hover {
+  background-color: var(--maindarkblue);
+  color: #fcfcfc;
+}
+
+.dropcontenido a:hover {
+  background-color: var(--maindarkblue);
+  color: #fcfcfc;
+  border-radius: 0;
+}
+
+.drop:hover .dropcontenido {
+  display: block;
+}
+
+.drop:hover .fa-chevron-down {
+  transform: scaleY(-1);
+}
+.fa-chevron-down {
+  display: inline-block;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.fa-chevron-down:hover {
+  transform: scaleY(-1);
+}
+
+#loginbtn a {
+  position: relative;
+  margin-right: 200px;
+  height: fit-content;
+  background-color: var(--mainorange);
+  color: #fcfcfc;
+  border-radius: 16px;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#loginbtn a:hover {
+  background-color: var(--maindarkblue);
+  color: #fcfcfc;
+  border-radius: 16px;
+}
+
+#lupa {
+  float: right;
+  margin-right: 30px;
+}
+
