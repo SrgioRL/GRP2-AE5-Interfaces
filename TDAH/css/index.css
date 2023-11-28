@@ -7,8 +7,7 @@
   font-family: Montserrat, sans-serif;
 }
 body {
-  background-color: #fcfcfc;
-  width: 90%;
+  background-color: #f6f6f6;
   height: 100vh;
   margin: auto;
   margin-top: 10px;
@@ -60,7 +59,6 @@ body {
   background-color: var(--maindarkblue);
   color: #fcfcfc;
   border-radius: 16px;
-
 }
 
 #dropcontenido {
@@ -130,3 +128,53 @@ body {
   margin-right: 30px;
 }
 
+footer {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  text-align: center;
+}
+#mainfooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  background-color: #eaf6ff;
+}
+
+#rrss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+}
+
+#logors {
+  width: 125px;
+  height: 115px;
+}
+
+#rs-container {
+  display: flex;
+}
+
+#rs {
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+  padding: 0 5px;
+}
+
+#politicas {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #465f9a;
+}
+
+#politicas a {
+  padding: 0 50px;
+  text-decoration: none;
+  color: #fcfcfc;
+}
