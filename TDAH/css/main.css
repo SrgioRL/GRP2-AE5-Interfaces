@@ -112,15 +112,16 @@ body {
   height: fit-content;
   background-color: var(--mainorange);
   color: #fcfcfc;
-  border-radius: 16px;
+  border-radius: 8px;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
   transition: background-color 0.2s ease, color 0.2s ease;
+  padding: 8px 16px;
+  font-weight: 600;
 }
 
 #loginbtn a:hover {
   background-color: var(--maindarkblue);
   color: #fcfcfc;
-  border-radius: 16px;
 }
 
 #lupa {
