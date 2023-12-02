@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700&family=Space+Grotesk:wght@300;500;600&display=swap");
 :root {
   --maindarkblue: #1c2e6a;
   --mainorange: #f98125;
@@ -64,7 +64,6 @@ body {
   background-color: var(--maindarkblue);
   color: #fcfcfc;
   transition: background-color 0.2s ease, color 0.2s;
-
 }
 
 #dropcontenido {
