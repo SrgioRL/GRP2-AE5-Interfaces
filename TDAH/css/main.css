@@ -131,10 +131,42 @@ footer {
 }
 #mainfooter {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 250px;
   background-color: #eaf6ff;
+}
+
+#line {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 10px;
+}
+
+#contacto {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#contacto p,
+#contacto h3 {
+  margin: 10px 0;
+  padding: 0;
+  color: var(--maindarkblue);
+  font-weight: bold;
+}
+
+.dataline {
+  display: flex;
+  align-items: center;
+}
+
+.dataline img {
+  width: 25px;
+  height: 25px;
+  padding: 0 10px;
 }
 
 #rrss {
@@ -149,15 +181,11 @@ footer {
   height: 115px;
 }
 
-#rs-container {
-  display: flex;
-}
-
-#rs {
+#rscontainer img {
   width: 25px;
   height: 25px;
-  margin-top: 10px;
-  padding: 0 5px;
+  margin-top: 15px;
+  padding: 0 10px;
 }
 
 #politicas {
