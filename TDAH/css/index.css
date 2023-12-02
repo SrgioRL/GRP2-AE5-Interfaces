@@ -1,0 +1,75 @@
+:root {
+  --maindarkblue: #1c2e6a;
+  --mainorange: #f98125;
+}
+#indexsection article {
+}
+
+#indexsection {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#hero {
+  width: 100%;
+  height: 375px;
+  position: absolute;
+  top: 125px;
+}
+
+#heroimg {
+  position: absolute;
+  z-index: 1;
+}
+
+#heroimg img {
+  width: 650px;
+  height: 375px;
+}
+
+#herotitle {
+  position: relative;
+  z-index: 10;
+}
+
+#herotitle {
+  color: var(--maindarkblue);
+  font-size: 56px;
+  z-index: 10;
+}
+
+#herotext {
+  position: relative;
+  color: var(--maindarkblue);
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 10;
+  margin-bottom: 50px;
+}
+
+#signupbtn {
+  margin-top: 150px;
+}
+
+#signupbtn a {
+  height: fit-content;
+  background-color: var(--mainorange);
+  color: #fcfcfc;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 50px;
+  border-radius: 16px;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#signupbtn a:hover {
+  background-color: var(--maindarkblue);
+  color: #fcfcfc;
+  border-radius: 16px;
+}
