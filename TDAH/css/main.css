@@ -24,7 +24,7 @@ body {
   right: 0;
   margin: auto;
   background-color: #f6f6f6;
-  z-index: 10;
+  z-index: 100;
   box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -63,13 +63,16 @@ body {
 #navbar a:not(#enlacelogo):hover {
   background-color: var(--maindarkblue);
   color: #fcfcfc;
+  transition: background-color 0.2s ease, color 0.2s;
+
 }
 
 #dropcontenido {
   display: none;
   position: absolute;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
 }
 
 #dropcontenido a {
@@ -123,14 +126,15 @@ body {
 
 #lupa {
   float: right;
-  margin-right: 125px;
+  margin-right: 112px;
 }
 
 footer {
-  position: absolute;
-  top: 100%;
+  position: relative;
+  bottom: 0;
   width: 100%;
   text-align: center;
+  margin-top: 112px;
 }
 #mainfooter {
   display: flex;
