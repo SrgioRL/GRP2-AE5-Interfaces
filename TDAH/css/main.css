@@ -55,7 +55,7 @@ body {
   border-radius: 16px;
 }
 
-#navbar a:hover {
+#navbar a:not(#enlacelogo):hover {
   background-color: var(--maindarkblue);
   color: #fcfcfc;
   border-radius: 16px;
