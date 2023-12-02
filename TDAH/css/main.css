@@ -51,19 +51,29 @@ body {
 }
 
 #navbar a {
-  display: block;
+  display: inline-block;
+  position: relative;
   color: var(--maindarkblue);
   font-weight: bold;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
-#navbar a:not(#enlacelogo):hover {
-  background-color: var(--maindarkblue);
-  color: #fcfcfc;
-  transition: background-color 0.2s ease, color 0.2s;
+#navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--mainorange); /* Color del subrayado al hacer hover */
+  transition: width 0.3s ease;
+}
+
+#navbar a:not(#enlacelogo):hover::after {
+  width: 100%;
 }
 
 #dropcontenido {
@@ -84,9 +94,9 @@ body {
 }
 
 #dropcontenido a:hover {
-  background-color: var(--maindarkblue);
-  color: #fcfcfc;
-  border-radius: 0;
+  background-color: transparent;
+  color: var(--maindarkblue);
+  border-radius: 8px;
 }
 
 #drop:hover #dropcontenido {
