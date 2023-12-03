@@ -1,0 +1,24 @@
+:root {
+    --maindarkblue: #1c2e6a;
+    --mainorange: #f98125;
+  }
+
+#error {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#error img{
+    width: 50%;
+    height: auto;
+    margin-top: 75px;
+}
+
+#error h1{
+    color: var(--maindarkblue);
+    font-size: 40px;
+    margin: 0 0;
+}
