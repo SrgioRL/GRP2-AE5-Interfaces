@@ -243,7 +243,7 @@ footer {
 
 
 /* ============== RESPONSIVE ============== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   #navbar ul {
     display: flex;
     flex-direction: row;
@@ -254,17 +254,19 @@ footer {
     overflow: hidden;
   }
 
+  #navbar a{
+    font-size: 14px;
+  }
+
   #logo {
     margin-left: 20px; /* Adjusted margin for tablet */
   }
 
   #lupa {
     display: block; /* Show the search icon for tablets */
-    margin-right: 20px; /* Adjusted margin for tablet */
+    margin-right: auto; /* Adjusted margin for tablet */
   }
-}
 
-@media only screen and (max-width: 768px) {
   #mainfooter {
     flex-direction: column;
     height: auto;
@@ -285,7 +287,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 375px) and (max-width: 600px){
+@media only screen and (max-width: 850px){
 
 
   #navbar{
