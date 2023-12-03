@@ -3,28 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/signUp.css">
 </head>
 <body>
     <div class="container">
         <img class="hombre" src="img/signUp.png" alt="login2">
         <div class="formulario">
-            
-            <img class="x" src="img/x.svg" alt="x">
-            
+
+            <a href="index.html"><img class="x" src="img/x.svg" alt="x"></a>
+
             <a class="titulo">¡Inicia tu viaje!</a>
-            <div class="boton google" onmouseover="cambiarColor()">
+            <div class="boton google">
                 <img class="icono-g" src="img/google.svg">
+                <img class="icono-g-n" src="img/google-negro.svg">
                 <a id="aGoogle">Accede con Google</a>
             </div>
             <div class="boton facebook">
-                <img class="icono-f" src="img/facebook.svg">
+                <img class="icono-f-b" src="img/facebook-blanco.svg">
+                <img class="icono-f-n" src="img/facebook-negro.svg">
+
                 <a>Accede con Facebook</a>
             </div>
             <div class="linea"></div>
             <input class="email" type="text" class="input" placeholder="E-mail">
-            <input class="contraseña" type="text" class="input" placeholder="Contraseña">
+            <input class="contraseña" type="password" class="input" placeholder="Contraseña">
             <div class="inputTerminos">
                 <input class="terminos" name="terminos" type="checkbox">
                 <p > Acepto los <a href="">términos y condiciones</a></p>

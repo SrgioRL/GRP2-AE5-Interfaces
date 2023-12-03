@@ -13,6 +13,8 @@ body {
   margin-top: 10px;
 }
 
+/* ============== NAVBAR ============== */
+
 #navbar {
   width: 100%;
   height: fit-content;
@@ -68,12 +70,16 @@ body {
   bottom: 0;
   width: 0%;
   height: 2px;
-  background-color: var(--mainorange); /* Color del subrayado al hacer hover */
+  background-color: var(--mainorange);
   transition: width 0.3s ease;
 }
 
 #navbar a:not(#enlacelogo):hover::after {
   width: 100%;
+}
+
+#navbar #loginbtn a::after {
+  width: 0% !important; 
 }
 
 #dropcontenido {
@@ -138,6 +144,8 @@ body {
   float: right;
   margin-right: 112px;
 }
+
+/* ============== FOOTER ============== */
 
 footer {
   position: relative;
@@ -218,3 +226,11 @@ footer {
   text-decoration: none;
   color: #fcfcfc;
 }
+
+
+/* ============== RESPONSIVE ============== */
+
+
+
+
+
