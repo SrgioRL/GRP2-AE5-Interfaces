@@ -263,9 +263,11 @@
   #servicecards {
     margin-top: 75px;
     overflow-x: scroll;
+    justify-content: start;
   }
 
   .card {
+    
     min-width: 250px;
     margin: 0 20px;
     flex-shrink: 0;
