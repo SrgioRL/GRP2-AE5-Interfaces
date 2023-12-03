@@ -44,6 +44,7 @@ body{
     width: 8%;
     display: flex;
     position: relative;
+    right: 0;
     top: 10px;
     left: -5px;
     grid-column: 1/3;

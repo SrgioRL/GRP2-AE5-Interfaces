@@ -41,6 +41,7 @@ body{
 .x{
     display: flex;
     position: relative;
+    right: 0;
     top: 10px;
     width: 9%;
     right: -440px;
@@ -363,6 +364,7 @@ body{
     }
 
     .x{
+        right: 0 auto;
         right: -310px;
     }
 
