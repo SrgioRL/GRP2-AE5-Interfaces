@@ -19,6 +19,8 @@
   height: 375px;
   position: relative;
   top: 125px;
+  display: flex;
+  flex-direction: column;
 }
 
 #heroimg {
@@ -52,7 +54,7 @@
 }
 
 #signupbtn {
-  margin-top: 150px;
+  margin-top: 50px;
   position: relative;
   z-index: 10;
 }
@@ -98,13 +100,15 @@
   font-size: 32px;
 }
 #art1text p {
+  width: 100%;
   font-size: 18px;
 }
 #art1img {
   width: 55%;
 }
 #art1img img {
-  height: 550px;
+  width: 100%;
+  height: auto;
 }
 
 #readMoreBtn {
@@ -150,13 +154,17 @@
   font-size: 32px;
 }
 #art2text p {
+  width: 100%;
   font-size: 18px;
 }
+
 #art2img {
   width: 55%;
 }
+
 #art2img img {
-  height: 550px;
+  width: 100%;
+  height: aut;
 }
 
 /* --------------- SERVICE CARDS --------------- */
@@ -203,12 +211,7 @@
 
 /* --------------- MEDIA QUERYS --------------- */
 
-@media only screen and (max-width: 600px) {
-  body {
-    width: 100vw;
-    overflow-x: hidden;
-  }
-
+@media only screen and (min-width: 375px) and (max-width: 600px) {
   #herotitle {
     margin: 0 auto;
     font-size: 32px;
@@ -223,12 +226,95 @@
     position: relative;
     width: 100%;
     height: auto;
-    top: 125px;
+    top: 150px;
+  }
+
+  #signupbtn {
+    margin-top: 0px;
   }
 
   #fullText {
     display: none;
   }
+
+  #art1,
+  #art2 {
+    justify-content: center;
+  }
+
+  #art1text,
+  #art2text {
+    width: 90%;
+    margin: 0;
+  }
+
+  #art1text h3,
+  #art2text h3 {
+    font-size: 24px;
+  }
+
+  #readMoreBtn {
+    display: block;
+    margin: 0;
+  }
+
+  #services h1 {
+    font-size: 32px;
+  }
+  
+  #servicecards {
+    margin-top: 75px;
+    justify-content: start;
+    overflow-x: scroll;
+  }
+
+  .card {
+    min-width: 250px;
+    margin: 0 20px;
+    flex-shrink: 0;
+  }
+
+  .card h3 {
+    color: #fcfcfc;
+    font-size: 24px;
+  }
+
+  .card p {
+    white-space: normal;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1300px) {
+
+  #hero {
+    align-items: center;
+  }
+  #herotitle {
+    margin: 0 auto;
+    font-size: 32px;
+  }
+
+  #herotext {
+    font-size: 12px;
+  }
+
+  #heroimg img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 125px;
+    margin: 0 auto;
+  }
+
+  #signupbtn {
+    margin-top: 0px;
+    z-index: 10;
+  }
+
+  #fullText {
+    display: none;
+  }
+
   #art1,
   #art2 {
     display: flex;
@@ -248,6 +334,7 @@
     height: auto;
     margin: 0;
   }
+
   #art1text h3,
   #art2text h3 {
     font-size: 24px;
@@ -257,11 +344,14 @@
     display: block;
     margin: 0;
   }
+
   #services h1 {
     font-size: 32px;
   }
+
   #servicecards {
     margin-top: 75px;
+    justify-content: start;
     overflow-x: scroll;
   }
 
@@ -275,19 +365,4 @@
     color: #fcfcfc;
     font-size: 24px;
   }
-
-  .card p {
-    width: 90%;
-    color: #fcfcfc;
-    font-size: 16px;
-    text-align: left;
-  }
-
-  .card p {
-    white-space: normal;
-  }
-}
-
-@media only screen and (min-width: 601px) and (max-width: 1600px) {
-  
 }
