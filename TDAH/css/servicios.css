@@ -1,3 +1,4 @@
+/*
 #contservicios {
     display: flex;
     flex-direction: column;
@@ -5,13 +6,6 @@
     align-items: center;
     gap: 104px;
     margin-top: 220px;
-    /*position: absolute;*/
-    /*top: 176px;*/
-    /*bottom: 176px;*/
-    /*margin: 0 auto;*/
-    /*width: 100%;*/
-    /*margin-top: 176px;*/
-    /*margin-bottom: 176px;*/
 }
   
 
@@ -37,23 +31,8 @@
 }
 
 .servicios:hover {
-    /*animation: animservicios 5s infinite;*/
     transform: scale(1.1);
 }
-
-/*
-@keyframes animservicios {
-    0%{
-        transform: scale(1,1);
-    }
-    50%{
-        transform: scale(1.1,1.1);
-    }
-    100%{
-        transform: scale(1.1,1.1);   
-    }
-}
-*/
 
 .servicios img {
     border-radius: 8px;
@@ -66,4 +45,90 @@
     font-weight: 800;
     margin: 0px;
     color: #eaf6ff;
+}
+*/
+
+/* Estilos generales */
+
+#contservicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 104px;
+    margin-top: 220px;
+}
+
+.subcontservicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 104px;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6379AB;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 16px;
+    gap: 16px;
+    transition: transform 1s;
+    text-decoration: none;
+}
+
+.servicios:hover {
+    transform: scale(1.1);
+}
+
+.servicios img {
+    border-radius: 8px;
+    width: 100%; 
+    max-width: 472px; 
+    height: auto;
+}
+
+.servicios p {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0px;
+    color: #eaf6ff;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 767px) {
+    #contservicios {
+        gap: 20px;
+        margin-top: 220px;
+    }
+
+    .subcontservicios {
+        gap: 20px;
+    }
+
+    .servicios {
+        width: 100%;
+        max-width: none;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    
+    .servicios:hover {
+        transform: none;
+    }
+    
+
+    .servicios img {
+        max-width: none;
+    }
+
+    .servicios p {
+        white-space: nowrap;
+        font-size: 24px;
+        font-weight: 600;
+    }
 }
