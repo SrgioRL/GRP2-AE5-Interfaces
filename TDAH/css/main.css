@@ -229,6 +229,54 @@ footer {
 
 
 /* ============== RESPONSIVE ============== */
+@media screen and (max-width: 768px) {
+  #navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  #logo {
+    margin-left: 20px; /* Adjusted margin for tablet */
+  }
+
+  #lupa {
+    display: block; /* Show the search icon for tablets */
+    margin-right: 20px; /* Adjusted margin for tablet */
+  }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  #mainfooter {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #rrss {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  #contacto{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  #politicas a {
+    padding: 0 20px;
+  }
+}
 
 
 
