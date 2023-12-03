@@ -1,6 +1,12 @@
+
 body{
+    background: linear-gradient(rgba(28,46,106, 0.60), rgb(28,46,106)), url('/img/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
     display: flex;
     justify-content: center;
+    overflow: hidden;
     background-color: rgba(222, 222, 222, 0.85);
 }
 
@@ -25,16 +31,17 @@ body{
     background: white;
     gap: 8px;
     z-index: 2;
-        
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hombre{
     order: 2;
-    width: 500px;
+    width: 50%;
     margin-left: -26px;
 }
 
 .x{
+    width: 8%;
     display: flex;
     position: relative;
     top: 10px;
@@ -44,7 +51,6 @@ body{
 }
 
 .titulo{
-    
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: 800;
@@ -60,26 +66,65 @@ body{
     text-align: center;
     border: 2px solid rgb(28,46,106);
     border-radius: 8px;
-    height: 50%;
+    height: 2rem;
+}
+
+.boton:hover{
+    background-color: rgb(28,46,106);
+    color: white;
+}
+
+/*Al pasar el raton por el boton, el icono de google negro se oculta*/
+.boton:hover .icono-g-n{
+    display: none;
+}
+
+/*Al pasar el raton por el boton, el icono de google blanco se muestra*/
+.boton:hover .icono-g{
+    display: block;
 }
 
 .boton a{
     margin-left: 20%;
     font-weight: bold;
-    font-size: small;
+    font-size: 0.7rem;
     font-family: 'Montserrat', sans-serif;
 }
 
-.icono-g{
+.icono-g-n{
     padding-left: 5px;
     width: 10%;
 }
 
-.icono-f{
+/*Por defecto, el icono blanco esta oculto*/
+.icono-g{
+    display: none;
+    fill: white;
+    padding-left: 5px;
+    width: 10%;
+}
+
+/*Al pasar el raton por el boton, el icono de facebook negro se oculta*/
+.boton:hover .icono-f-n{
+    display: none;
+}
+
+/*Al pasar el raton por el boton, el icono de facebook blanco se muestra*/
+.boton:hover .icono-f-b{
+    display: block;
+}
+
+/*Por defecto, el icono blanco esta oculto*/
+.icono-f-b{
+    display: none;
     padding-left: 5px;
     width: 7%;
 }
 
+.icono-f-n{
+    padding-left: 5px;
+    width: 7%;
+}
 
 
 .google{
@@ -88,7 +133,6 @@ body{
     justify-content: center;
     border-radius: 8px;
     color: rgb(28,46,106);
-    height: 30px;
     border: 1px solid rgb(28,46,106);
     grid-column: 1/2;
     grid-row: 3/4;
@@ -101,7 +145,6 @@ body{
     justify-content: center;
     border-radius: 8px;
     color: rgb(28,46,106);
-    height: 30px;
     border: 1px solid rgb(28,46,106);
     grid-column: 2/3;
     grid-row: 3/4;
@@ -109,7 +152,7 @@ body{
 .linea{
     position: relative;
     top: -10px;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     height: 0.1px;
     grid-column: 1/3;
     grid-row: 4/5;
@@ -164,4 +207,132 @@ body{
 }
 .recuperar a{
     color: rgb(249,129,37);
+}
+/* Mobile */
+@media screen and (min-width: 320px)and (max-width : 425px){
+    
+    .container{
+        width: 250px;
+        height: 177px;
+        display: grid;
+    }
+
+    .formulario{
+        width: 15rem;      
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;   
+        box-shadow: -10px 9px 5px 0px rgba(193, 192, 192);   
+    }
+    
+    .hombre{
+        display: none;
+    }
+    
+    .x{
+        width: 5%;
+    }
+    
+    .titulo{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+    }
+    
+    .boton{
+        margin-top: 1rem;
+        border-radius: 8px;
+        height: 1.5rem;
+    }
+    
+    .boton a{
+        margin: 0 auto;
+        font-size: 0.6rem;
+    }
+    
+    .linea{
+        display: none;
+    }
+    
+    .email{
+        margin-top: 2rem;
+        height: 2rem;
+    }
+    
+    .contraseña{
+        height: 2rem;
+        margin-top: 0.5rem;
+    }
+    
+    .acceder{
+        height: 2rem;
+        font-size: 0.6rem;
+    }
+    
+    .recuperar{
+        margin-top: 2rem;
+        font-size: 0.6rem;
+    }
+    .recuperar a{
+        font-size: 0.6rem;
+    }
+}
+
+/* TABLET*/
+@media screen and (min-width: 426px)and (max-width : 768px) {
+body{
+    padding: 20px;
+}
+.container{
+    width: 600px;
+    height: 455px; 
+}
+
+.formulario{
+    width: 60%;      
+}
+
+.hombre{
+    order: 2;
+    width: 40%;
+}
+
+.titulo{
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.boton{
+    margin-top: 1rem;
+    height: 1.2rem;
+}
+
+.boton a{
+    margin: 0 auto;
+    font-size: 0.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.linea{
+   margin-top: 18px;
+}
+
+.email{
+    margin-top: 3rem;
+    height: 1.9rem;
+}
+
+.contraseña{
+    margin-top: 0.5rem;
+    height: 2rem;
+}
+
+.acceder{
+    height: 1.7rem;
+    font-size: 0.6rem;
+}
+
+
+.recuperar{
+    margin-top: 15px;
+    font-size: 0.6rem;
+}
 }
